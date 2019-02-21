@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -25,12 +26,12 @@
 			<div class=""><img src="images/01.png" alt="" width="218" /></div>
 		</div>
 		<div class="content">
-			<h1><a href="#">EzBANK</a></h1>
+			<h1>EzBANK</h1>
 			<p>Maquininha de Cartão Pop Credicard<br />
 				R$ 3,00 e a Mini Pop é minha?
 				<!-- Sim, 12x R$ 3,00! <a href="http://html5up.net">HTML5 UP</a></p> -->
 				<ul class="actions">
-					<li><a href="#one" class="button primary scrolly">quero a minha</a></li>
+					<li><a href="#ez-card" class="button primary scrolly">quero a minha</a></li>
 					<li><a href="#one" class="button icon fa-chevron-down scrolly">Learn More</a></li>
 				</ul>
 		</div>
@@ -44,10 +45,7 @@
 		<ul class="icons major icons-custom">
 			<li><img src="images/mastercard.png" alt=""></li>
 			<li><img src="images/visa.png" alt=""></li>
-			<li><img src="images/elo.png" alt=""></li>
-			<!-- <li><span class="icon fa-camera-retro"><span class="label">Shoot</span></span></li>
-			<li><span class="icon fa-refresh"><span class="label">Process</span></span></li>
-			<li><span class="icon fa-cloud"><span class="label">Upload</span></span></li> -->
+			<!-- <li><img src="images/elo.png" alt=""></li> -->
 		</ul>
 	</section>
 
@@ -116,11 +114,11 @@
 
 	</section>
 
-	<section class="box-box special features">
-		<div class="row">
+	<section id="ez-card" class="box-box special features">
+		<div class="row sec-box">
 			<div class="col-12 col-md-6">
 				<section class="card-box">
-					<h3 class="title">Maquininha Mini Pop Credicard</h3>
+					<h3 class="title">Maquininha Pop Credicard</h3>
 					<img src="images/mini verde 2.png" alt="">
 
 					<div class="features-text">
@@ -147,27 +145,130 @@
 			</div>
 		</div>
 
+		<div class="row sec-box" style="border: none;">
+			<div class="col-12 col-md-6">
+				<section class="card-box">
+					<h3 class="title">CRÉDITO</h3>
+					<img src="images/cartao02.png" width="266" height="168" alt="">
 
-		<div class="row">
-			<div class="col-12 col-md-6">
-				<section>
-					<span class="icon major fa-cloud accent4"></span>
-					<h3>Sed feugiat</h3>
-					<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum
-						phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-				</section>
-			</div>
-			<div class="col-12 col-md-6">
-				<section>
-					<span class="icon major fa-lock accent5"></span>
-					<h3>Enim phasellus</h3>
-					<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum
-						phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+					<div class="features-text">
+						<p>À vista</p>
+						<p>3,09%</p>
+						<p>Parcelado</p>
+						<p>3,09% + 0,10% por parcela</p>
+						<p>Receba em</p>
+						<p>30 dias úteis</p>
+					</div>
 				</section>
 			</div>
 
+			<div class="col-12 col-md-6">
+				<section class="card-box">
+					<h3 class="title">DÉBITO</h3>
+					<img src="images/cartao02.png" width="266" height="168" alt="">
+
+					<div class="features-text">
+						<p>Taxa</p>
+						<p>2,39%</p>
+						<p>Receba em</p>
+						<p>30 dias úteis</p>
+					</div>
+				</section>
+			</div>
 		</div>
+	</section>
 
+	<section id="" class="wrapper style2 special">
+		<header class="major">
+			<h2 class="text-center">SIMULE SEU GANHO COM O EZBANK</h2>
+		</header>
+		<div class="col-6 offset-3">
+
+			<!-- <p>
+
+				<a class="btn btn-primary" data-toggle="collapse" href="#collapseCard" role="button"
+					aria-expanded="false" aria-controls="collapseCard">
+					Link with href
+				</a>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseCard"
+					aria-expanded="false" aria-controls="collapseCard">
+					Button with data-target
+				</button>
+			</p> -->
+
+			<div class="check-card">
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="radioOptionCards" id="deb" value="1" checked
+						onclick="setTypeCard()">
+					<label class="form-check-label" for="deb">
+						Débito
+					</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="radioOptionCards" id="cred" val="0"
+						data-toggle="collapse" href="#collapseCard" aria-expanded="false" aria-controls="collapseCard">
+					<label class="form-check-label" for="cred">
+						Crédito
+					</label>
+				</div>
+			</div>
+
+			<div class="collapse" id="collapseCard">
+				<div class="card card-body">
+					<div class="row">
+						<div class="col-6">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-1"
+									value="2" onclick="setTypeCard()">
+								<label class="form-check-label" for="cred-1">
+									Crédito à Vista
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-2"
+									value="3" onclick="setTypeCard()">
+								<label class="form-check-label" for="cred-2">
+									Crédito à Vista
+								</label>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="check-card">
+				<input type="text" name="money" id="money" onchange="setMoney(this.value)">
+			</div>
+
+			<div class="check-card">
+				<div class="row">
+					<div class="box d-inline-block col-12">
+						<div class="row">
+							<div class="col-6">
+								<span>Taxa <span id="taxa"></span>%</span>
+							</div>
+							<div class="col-6">
+								<span id="resultTaxa" class="ml-auto"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="box d-inline-block col-12">
+						<div class="row">
+							<div class="col-6">
+								<span>Vc recebe na sua conta</span>
+							</div>
+							<div class="col-6">
+								<span id="resultMoney"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- Four -->
@@ -506,6 +607,73 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/ion.rangeSlider.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		$("#money").ionRangeSlider({
+			skin: "round",
+			min: 0,
+			max: 10000,
+			from: 100,
+			step: 100,
+			prefix: "R$"
+		});
+
+		function setTypeCard() {
+			var options = document.getElementsByName("radioOptionCards");
+
+			for (var i = 0; i < options.length; i++) {
+				if (options[i].checked == true) {
+					optionCard = options[i].value;
+					break;
+				}
+			}
+			var val = $('#money').val();
+			setMoney(val);
+		}
+
+		setTypeCard();
+
+		function setMoney(val) {
+
+			var optionCard = this.optionCard;
+			var t = 0;
+
+			switch (optionCard) {
+				case "0":
+					alert('selecionado seus fdp');
+					return false;
+					break;
+				case "1":
+					t = 2.39;
+					break;
+				case "2":
+					t = 4.89;
+					break;
+				case "3":
+					t = 3.29;
+					break;
+
+				default:
+					break;
+			}
+
+			var taxa = (t / 100);
+			var resultTaxa = val * taxa;
+			var resultMoney = val - resultTaxa;
+
+			var taxaDisplay = t.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+			resultMoney = resultMoney.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+			resultTaxa = resultTaxa.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+
+
+			$('#taxa').html(taxaDisplay);
+			$('#resultTaxa').html(resultTaxa);
+			$('#resultMoney').html(resultMoney);
+		}
+
+	</script>
 
 </body>
 

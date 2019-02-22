@@ -4348,3 +4348,7 @@ input[type="radio"] + label{
 .ul-navbar{
 	text-align: center;
 }
+
+.text-left{
+	text-align: left;
+}

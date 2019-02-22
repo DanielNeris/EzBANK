@@ -42,7 +42,9 @@
 	}
 
 	// Scrolly.
-	$('.scrolly').scrolly({ speed: 1500, offset:110 });
-	// $('html, body').animate({scrollTop: $('#contact').offset().top -100 }, 'slow');
+
+	//var height = $('header .navbar').height(); - real height
+	var height = $('header .navbar').innerHeight(); // height + padding + margin
+	$('.scrolly').scrolly({ speed: 1500, offset: height });
 
 })(jQuery);

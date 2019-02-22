@@ -16,6 +16,8 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body class="is-preload">
@@ -25,18 +27,21 @@
 			<a class="navbar-brand scrolly" href="#home">
 				<img src="images/logo ezcash-06.png" width="90" height="90" class="d-inline-block align-top" alt="">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			<button class="navbar-toggler btn-logo" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto ul-navbar">
 					<li class="nav-item active">
 						<a class="nav-link scrolly" href="#home">HOME</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link scrolly" href="#cards">BANDEIRAS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scrolly" href="#descriptions">BENEFÍCIOS</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link scrolly" href="#simulator">SIMULADOR</a>
@@ -58,7 +63,6 @@
 			</p>
 			<ul class="actions">
 				<li><a href="#ez-card" class="button primary scrolly">quero a minha</a></li>
-				<li><a href="#one" class="button icon fa-chevron-down scrolly">Learn More</a></li>
 			</ul>
 		</div>
 	</section>
@@ -66,7 +70,7 @@
 	<!-- One -->
 	<section id="cards" class="wrapper style2 special">
 		<header class="major">
-			<h2 class="text-center">ACEITE AS PRINCIPAIS BANDEIRAS</h2>
+			<h2 class="">ACEITE AS PRINCIPAIS BANDEIRAS</h2>
 		</header>
 		<ul class="icons major icons-custom">
 			<li><img src="images/mastercard.png" alt=""></li>
@@ -76,9 +80,9 @@
 	</section>
 
 	<!-- Two -->
-	<section id="two" class="wrapper">
+	<section id="descriptions" class="wrapper">
 		<div class="inner alt">
-			<section class="spotlight">
+			<!-- <section class="spotlight">
 				<div class="image"><img src="images/pic01.jpg" alt="" /></div>
 				<div class="content">
 					<h3>Ela é sua</h3>
@@ -113,15 +117,50 @@
 						Receba suas vendas em até 2 dias úteis sem nenhuma mudança de taxa!
 					</p>
 				</div>
-			</section>
+			</section> -->
 			<section class="special">
-				<ul class="icons labeled">
-					<li><span class="icon fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
-					<li><span class="icon fa-refresh"><span class="label">Sed vehicula elementum</span></span></li>
-					<li><span class="icon fa-cloud"><span class="label">Elit fusce consequat</span></span></li>
-					<li><span class="icon fa-code"><span class="label">Lorem nullam tempus</span></span></li>
-					<li><span class="icon fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
-				</ul>
+				<div class="row">
+					<div class="col-12">
+						<ul class="icons labeled ul-custom">
+							<li>
+								<span class="icon ">
+									<i class="fas fa-credit-card"></i>
+									<span class="label">
+										Sem aluguel, nem taxa de adesão.
+										E você ainda conta com frete grátis!
+									</span>
+								</span>
+							</li>
+							<li>
+								<span class="icon">
+									<i class="far fa-credit-card"></i>
+									<span class="label">
+										Aceite todos os tipos de cartão:
+										débito, crédito e vale-benefício.
+									</span>
+								</span>
+							</li>
+							<li>
+								<span class="icon">
+									<i class="fab fa-cc-mastercard"></i>
+									<span class="label">
+										Tenha uma das menores taxas do mercado:
+										2,39% no débito. Não é promoção, é benefício de verdade!
+									</span>
+								</span>
+							</li>
+							<li>
+								<span class="icon">
+									<i class="fab fa-cc-visa"></i>
+									<span class="label">
+										Receba suas vendas em até 2 dias úteis
+										sem nenhuma mudança de taxa!
+									</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</section>
 		</div>
 	</section>
@@ -235,7 +274,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-1"
 									value="1" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-1">
-									Crédito 1x
+									<span style="font-size: 20px">À Vista </span>
 								</label>
 							</div>
 						</div>
@@ -244,7 +283,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-2"
 									value="2" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-2">
-									Crédito 2x
+									2 parcelas
 								</label>
 							</div>
 						</div>
@@ -253,7 +292,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-3"
 									value="3" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-3">
-									Crédito 3x
+									3 parcelas
 								</label>
 							</div>
 						</div>
@@ -262,7 +301,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-4"
 									value="4" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-4">
-									Crédito 4x
+									4 parcelas
 								</label>
 							</div>
 						</div>
@@ -274,7 +313,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-5"
 									value="5" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-5">
-									Crédito 5x
+									5 parcelas
 								</label>
 							</div>
 						</div>
@@ -283,7 +322,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-6"
 									value="6" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-6">
-									Crédito 6x
+									6 parcelas
 								</label>
 							</div>
 						</div>
@@ -292,7 +331,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-7"
 									value="7" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-7">
-									Crédito 7x
+									7 parcelas
 								</label>
 							</div>
 						</div>
@@ -301,7 +340,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-8"
 									value="8" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-8">
-									Crédito 8x
+									8 parcelas
 								</label>
 							</div>
 						</div>
@@ -313,7 +352,7 @@
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-9"
 									value="9" onclick="setTypeCard()">
 								<label class="form-check-label" for="cred-9">
-									Crédito 9x
+									9 parcelas
 								</label>
 							</div>
 						</div>
@@ -321,8 +360,8 @@
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-10"
 									value="10" onclick="setTypeCard()">
-								<label class="form-check-label" for="cred-10">
-									Crédito 10x
+								<label class="form-check-label" for="cred-10" style="font-size: 13px">
+									10 parcelas
 								</label>
 							</div>
 						</div>
@@ -330,8 +369,8 @@
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-11"
 									value="11" onclick="setTypeCard()">
-								<label class="form-check-label" for="cred-11">
-									Crédito 11x
+								<label class="form-check-label" for="cred-11" style="font-size: 13px">
+									11 parcelas
 								</label>
 							</div>
 						</div>
@@ -339,8 +378,8 @@
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="radioOptionCards" id="cred-12"
 									value="12" onclick="setTypeCard()">
-								<label class="form-check-label" for="cred-12">
-									Crédito 12x
+								<label class="form-check-label" for="cred-12" style="font-size: 13px">
+									12 parcelas
 								</label>
 							</div>
 						</div>
@@ -357,7 +396,7 @@
 					<div class="box d-inline-block col-12">
 						<div class="row">
 							<div class="col-6">
-								<span>Taxa <span id="taxa"></span>%</span>
+								<span>Taxa <span id="taxa"></span>%</span> ao mês
 							</div>
 							<div class="col-6">
 								<span id="resultTaxa" class="ml-auto"></span>
@@ -387,7 +426,8 @@
 			<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 			<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 		</ul>
-		<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+		<p class="copyright">&copy; 2019 Todos os direitos reservados | EzBANK | Desenvolvido por <a
+				href="https://www.liveonsolutions.com" target="_blank">LiveOnSolutions</a> </p>
 	</footer>
 
 	<!-- Scripts -->
@@ -401,6 +441,18 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 
 	<script>
+		$(window).on("scroll", function () {
+			if ($(window).scrollTop()) {
+				$('nav ').addClass('bg-nav');
+				// $('nav .navbar-brand img').addClass('img-logo');
+			}
+
+			else {
+				$('nav').removeClass('bg-nav');
+				// $('nav .navbar-brand img').removeClass('img-logo');
+			}
+		})
+
 		$("#money").ionRangeSlider({
 			skin: "round",
 			min: 0,
@@ -429,48 +481,60 @@
 
 			var optionCard = this.optionCard;
 			var t = 0;
+			var m = 0;
 
 			switch (optionCard) {
 				case "0":
 					t = 2.39;
-
 					$('.collapse').collapse('hide');
 					break;
 				case "1":
 					t = 4.89;
+					m = 1;
 					break;
 				case "2":
 					t = 3.29;
+					m = 2;
 					break;
 				case "3":
 					t = 3.19;
+					m = 3;
 					break;
 				case "4":
 					t = 3.09;
+					m = 4;
 					break;
 				case "5":
 					t = 2.99;
+					m = 5;
 					break;
 				case "6":
 					t = 2.79;
+					m = 6;
 					break;
 				case "7":
 					t = 2.59;
+					m = 7;
 					break;
 				case "8":
 					t = 2.39;
+					m = 8;
 					break;
 				case "9":
 					t = 2.19;
+					m = 9;
 					break;
 				case "10":
 					t = 1.99;
+					m = 10;
 					break;
 				case "11":
 					t = 1.90;
+					m = 11;
 					break;
 				case "12":
 					t = 1.75;
+					m = 12;
 					break;
 
 				default:
@@ -478,7 +542,7 @@
 			}
 
 			var taxa = (t / 100);
-			var resultTaxa = val * taxa;
+			var resultTaxa = val * (taxa * m);
 			var resultMoney = val - resultTaxa;
 
 			var taxaDisplay = t.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });

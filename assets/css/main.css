@@ -4310,6 +4310,7 @@ input[type="radio"] + label{
 
 .ul-custom{
 	text-align: left;
+	display: flex;
 }
 
 

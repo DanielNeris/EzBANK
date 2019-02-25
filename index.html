@@ -26,7 +26,7 @@
 	<header>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-custom">
 			<a class="navbar-brand scrolly" href="#home">
-				<img src="images/LOGOEZ.png" width="150" height="50" class="d-inline-block align-top" alt="">
+				<img src="images/LOGOEZ-WHITE.png" width="150" height="50" class="d-inline-block align-top" alt="">
 			</a>
 			<button class="navbar-toggler btn-logo" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -70,7 +70,7 @@
 		<div class="content">
 			<h1> <strong>EzBANK</strong> </h1>
 			<p>
-				Faça transações financeiras usando QR Code na tela <br> 
+				Faça transações financeiras usando QR Code na tela <br>
 				do celular, em sites ou em etiquetas impressas.
 			</p>
 			<ul class="actions">
@@ -166,6 +166,9 @@
 
 				<a href="#">
 					<img src="images/btn-android.png" width="150" height="50" alt="">
+				</a>
+				<a href="#">
+					<img src="images/btn-ios.png" width="150" height="51" alt="">
 				</a>
 			</li>
 			<!-- <li><a href="#" class="button">Learn More</a></li> -->
@@ -556,8 +559,8 @@
 		<ul class="icons">
 			<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 		</ul>
-		<p class="copyright">&copy; 2019 Todos os direitos reservados | EzBANK | Desenvolvido por <a
-				href="https://www.liveonsolutions.com" target="_blank">LiveOnSolutions</a> </p>
+		<p class="copyright">&copy; 2019 Todos os direitos reservados | EzBANK | Desenvolvido por <a href="#"
+				target="_blank">EzBANK</a> </p>
 	</footer>
 	<!-- End Footer -->
 
@@ -578,12 +581,16 @@
 		$(window).on("scroll", function () {
 			if ($(window).scrollTop()) {
 				$('nav ').addClass('bg-nav');
-				// $('nav .navbar-brand img').addClass('img-logo');
+				$('header .navbar .ul-navbar a').addClass('navbar-color');
+				$('nav .navbar-brand img').remove();
+				$('nav .navbar-brand').append('<img src="images/LOGOEZ.png" width="150" height="50" class="d-inline-block align-top" alt="">');
 			}
 
 			else {
 				$('nav').removeClass('bg-nav');
-				// $('nav .navbar-brand img').removeClass('img-logo');
+				$('header .navbar .ul-navbar a').removeClass('navbar-color');
+				$('nav .navbar-brand img').remove();
+				$('nav .navbar-brand').append('<img src="images/LOGOEZ-WHITE.png" width="150" height="50" class="d-inline-block align-top" alt="">');
 			}
 		})
 
@@ -591,7 +598,7 @@
 			skin: "round",
 			min: 0,
 			max: 10000,
-			from: 100,
+			from: 1000,
 			step: 100,
 			prefix: "R$"
 		});

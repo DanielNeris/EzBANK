@@ -4318,9 +4318,13 @@ input[type="radio"] + label{
 
 
 #descriptions {
-	background-color: #000;
+	background-color: #007bff;
 	background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
 	background-attachment: fixed;
+}
+
+#descriptions span{
+	color: #fff;
 }
 
 .icon i{
@@ -4406,4 +4410,18 @@ input[type="radio"] + label{
 
 #simulator strong{
 	color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active>.nav-link {
+	color: #fff;
+}
+
+.navbar-color{
+	color: rgba(0,0,0,0.5) !important;
+}
+
+.irs-min,
+.irs-max{
+	padding: 9px;
 }

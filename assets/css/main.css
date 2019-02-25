@@ -3592,7 +3592,7 @@ input, select, textarea {
 /* Home */
 
 	#home {
-		background-color: #4696e5;
+		/* background-color: #4696e5; */
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
@@ -3607,7 +3607,8 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
+		/* background-image: url("images/overlay.png"), url("images/pattern-size1.svg"); */
+		background-image: url("images/bg.png");
 		background-position: top left, center center;
 		background-attachment: fixed, fixed;
 		background-size: auto, cover;
@@ -3872,7 +3873,8 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#home {
-				background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
+				/* background-image: url("images/overlay.png"), url("images/pattern-size2.svg"); */
+				background-image: url("images/bg.png");
 			}
 
 		}
@@ -3923,7 +3925,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#home {
-				background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
+				/* background-image: url("images/overlay.png"), url("images/pattern-size3.svg"); */
+				background-image: url("images/bg.png");
 			}
 
 				#home h1 {
@@ -4353,34 +4356,6 @@ input[type="radio"] + label{
 	text-align: left;
 }
 
-.back-to-top {
-	position: fixed;
-	display: none;
-	background: #0078ff;
-	color: #fff;
-	width: 44px;
-	height: 44px;
-	text-align: center;
-	line-height: 2.5;
-	font-size: 16px;
-	border-radius: 50%;
-	right: 15px;
-	bottom: 15px;
-	transition: background 0.5s;
-	z-index: 11;
-}
-  
-.back-to-top i {
-	padding-top: 12px;
-	color: #fff;
-}
-  
-@media (max-width: 768px) {
-	.back-to-top {
-		bottom: 15px;
-	}
-}
-
 .scrollToTop{
 	position: fixed;
 	display: none;
@@ -4389,7 +4364,7 @@ input[type="radio"] + label{
 	width: 44px;
 	height: 44px;
 	text-align: center;
-	line-height: 2.5;
+	line-height: 2.7;
 	font-size: 16px;
 	border-radius: 50%;
 	right: 15px;
@@ -4397,10 +4372,38 @@ input[type="radio"] + label{
 	transition: background 0.5s;
 	z-index: 11;
 }
-/* .scrollToTop:hover{
-    text-decoration:none;
-} */
+.scrollToTop:hover{
+    color: #fff;
+}
 
 .section-with-bg {
 	background-color: #f6f7fd;
-  }
+}
+
+
+.btn-accordion{
+	box-shadow: none !important;
+	text-decoration: none;
+}
+
+.btn-accordion:hover{
+	text-decoration: none;
+	background: none;
+}
+
+.accordion{
+	text-align: left;
+}
+
+.accordion .card{
+	cursor: pointer;
+}
+
+.fa-custom{
+	float: right;
+	line-height: 1.5 !important;
+}
+
+#simulator strong{
+	color: #fff;
+}

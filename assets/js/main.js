@@ -47,20 +47,20 @@
 	var height = $('header .navbar').innerHeight(); // height + padding + margin
 	$('.scrolly').scrolly({ speed: 1500, offset: height });
 
-<<<<<<< HEAD
-=======
-	// Back to top button
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			$('.back-to-top').fadeIn('slow');
-		} else {
-			$('.back-to-top').fadeOut('slow');
-		}
-	});
-	$('.back-to-top').click(function () {
-		$('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
-		return false;
-	});
 
->>>>>>> f3296d291d3c0b2279160600e76b63f02869c3ae
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
 })(jQuery);

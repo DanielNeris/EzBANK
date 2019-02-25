@@ -4351,9 +4351,6 @@ input[type="radio"] + label{
 
 .text-left{
 	text-align: left;
-<<<<<<< HEAD
-}
-=======
 }
 
 .back-to-top {
@@ -4364,7 +4361,7 @@ input[type="radio"] + label{
 	width: 44px;
 	height: 44px;
 	text-align: center;
-	line-height: 1;
+	line-height: 2.5;
 	font-size: 16px;
 	border-radius: 50%;
 	right: 15px;
@@ -4384,7 +4381,26 @@ input[type="radio"] + label{
 	}
 }
 
+.scrollToTop{
+	position: fixed;
+	display: none;
+	background: #0078ff;
+	color: #fff;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 2.5;
+	font-size: 16px;
+	border-radius: 50%;
+	right: 15px;
+	bottom: 15px;
+	transition: background 0.5s;
+	z-index: 11;
+}
+/* .scrollToTop:hover{
+    text-decoration:none;
+} */
+
 .section-with-bg {
 	background-color: #f6f7fd;
   }
->>>>>>> f3296d291d3c0b2279160600e76b63f02869c3ae

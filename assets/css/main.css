@@ -4351,4 +4351,40 @@ input[type="radio"] + label{
 
 .text-left{
 	text-align: left;
+<<<<<<< HEAD
 }
+=======
+}
+
+.back-to-top {
+	position: fixed;
+	display: none;
+	background: #0078ff;
+	color: #fff;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 1;
+	font-size: 16px;
+	border-radius: 50%;
+	right: 15px;
+	bottom: 15px;
+	transition: background 0.5s;
+	z-index: 11;
+}
+  
+.back-to-top i {
+	padding-top: 12px;
+	color: #fff;
+}
+  
+@media (max-width: 768px) {
+	.back-to-top {
+		bottom: 15px;
+	}
+}
+
+.section-with-bg {
+	background-color: #f6f7fd;
+  }
+>>>>>>> f3296d291d3c0b2279160600e76b63f02869c3ae

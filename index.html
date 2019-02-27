@@ -610,6 +610,11 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 
 	<script>
+
+		$('.ul-navbar a').click(function (){
+			$('.navbar-collapse').collapse('hide');
+		});
+
 		$(window).on("scroll", function () {
 			if ($(window).scrollTop()) {
 				$('nav ').addClass('bg-nav');
@@ -660,7 +665,7 @@
 				case "0":
 					t = 2.39;
 					m = 1;
-					$('.collapse').collapse('hide');
+					$('#collapseCard').collapse('hide');
 					break;
 				case "1":
 					t = 4.89;

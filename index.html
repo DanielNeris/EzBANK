@@ -464,15 +464,14 @@
 
 			<div class="check-card">
 				<div class="form-check form-check-inline">
-					<input class="form-check-input " type="radio" name="radioOptionCards" id="deb" value="0" checked
+					<input class="form-check-input " type="radio" name="radioTypeCards" id="deb" value="0" checked
 						onclick="setTypeCard()">
 					<label class="form-check-label" for="deb">
 						Débito
 					</label>
 				</div>
 				<div class="form-check form-check-inline">
-					<input class="form-check-input" type="radio" name="radioOptionCards" id="cred"
-						data-toggle="collapse" href="#collapseCard" aria-expanded="false" aria-controls="collapseCard">
+					<input class="form-check-input" type="radio" name="radioTypeCards" id="cred" value="1" data-toggle="collapse" href="#collapseCard" aria-expanded="false" aria-controls="collapseCard" onclick="setTypeCard()">
 					<label class="form-check-label" for="cred">
 						Crédito
 					</label>
@@ -833,12 +832,32 @@
 		});
 
 		function setTypeCard() {
-			var options = document.getElementsByName("radioOptionCards");
+			var options = document.getElementsByName("radioTypeCards");
 
 			for (var i = 0; i < options.length; i++) {
 				if (options[i].checked == true) {
-					optionCard = options[i].value;
-					break;
+					
+					if(options[i].value == "1"){
+						console.log('cred');
+
+						$('input[name=radioOptionCards][value=1]').attr('checked', true); 
+						optionCard = document.getElementsByName("radioOptionCards");
+						for (var j = 0; j < optionCard.length; j++) {
+							if (optionCard[j].checked == true){
+								console.log(optionCard[j].value);
+								optionCard = optionCard[j].value;
+								break;
+							}
+							
+						}
+
+					}
+					else{
+						console.log('deb');
+						optionCard = options[i].value;
+						break;
+					}
+					
 				}
 			}
 			var val = $('#money').val();

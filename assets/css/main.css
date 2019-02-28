@@ -4304,7 +4304,7 @@ a{
 
 @media (max-width: 992px) { 
 	.bg-custom{
-		background-color: rgba(255, 255, 255, 0.6);
+		background-color: rgba(255, 255, 255, 0.8);
 	}
 	header .navbar .ul-navbar a {
 		color: rgba(0,0,0,0.9) !important;
@@ -4631,15 +4631,21 @@ body .wpb_row.full-width-content .wpb_row > .row-bg-wrap,
 	.img-cads{
 		display: inline-block;
 	}
+
+	.ul-custom{
+		text-align: center !important;
+	}
+}
+
+@media (max-width: 768px) { 
+
 }
 
 @media (max-width: 1200px) { 
 	.img-download{
 		width: 300px;
 	}
-}
 
-@media (max-width: 1200px) { 
 	.img-cel-home img{
 		width: 200px;
 	}

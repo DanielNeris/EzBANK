@@ -4419,6 +4419,7 @@ input[type="radio"] + label{
 
 .accordion{
 	text-align: left;
+	padding: 20px 0;
 }
 
 .accordion .card{
@@ -4473,7 +4474,7 @@ input[type="radio"] + label{
 	background: #fff;
 	box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
 	flex-basis: 360px;
-	margin-right: 42px;
+	
 }
 .header-tax {
 	display: flex;
@@ -4612,3 +4613,35 @@ body .wpb_row.full-width-content .wpb_row > .row-bg-wrap,
 .iwt-text h4{
 	margin: 0;
 }
+
+.icons-custom img{
+	padding: 0 10px;
+}
+
+.img-cads{
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 576px) { 
+	.nectar-button{
+		padding: 5px 15px;
+	}
+
+	.img-cads{
+		display: inline-block;
+	}
+}
+
+@media (max-width: 1200px) { 
+	.img-download{
+		width: 300px;
+	}
+}
+
+@media (max-width: 1200px) { 
+	.img-cel-home img{
+		width: 200px;
+	}
+}
+

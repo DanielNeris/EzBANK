@@ -2577,7 +2577,7 @@ input, select, textarea {
 	}
 
 		ul.icons li {
-			display: inline-block;
+			display: inline-flex;
 			padding: 0 1.5em 0 0;
 		}
 
@@ -4304,7 +4304,7 @@ a{
 
 @media (max-width: 992px) { 
 	.bg-custom{
-		background-color: rgba(255, 255, 255, 0.8);
+		background-color: rgba(255, 255, 255, 1);
 	}
 	header .navbar .ul-navbar a {
 		color: rgba(0,0,0,0.9) !important;
@@ -4313,7 +4313,7 @@ a{
 
 #simulator{
 	color: #FFF !important;
-	background-color: #33a;
+	
 }
 
 .text-center{
@@ -4336,10 +4336,12 @@ input[type="radio"] + label{
 .ul-custom{
 	text-align: left;
 	display: flex;
+	padding: 10px;
 }
 
 
-#descriptions {
+#descriptions,
+#simulator {
 	background-color: #007bff;
 	background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
 	background-attachment: fixed;
@@ -4354,7 +4356,7 @@ input[type="radio"] + label{
 }
 
 .bg-nav{
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 1);
 	/* height: 60px; */
 	/* line-height: 60px; */
 }
@@ -4632,9 +4634,9 @@ body .wpb_row.full-width-content .wpb_row > .row-bg-wrap,
 		display: inline-block;
 	}
 
-	.ul-custom{
+	/* .ul-custom{
 		text-align: center !important;
-	}
+	} */
 }
 
 @media (max-width: 768px) { 
@@ -4651,3 +4653,20 @@ body .wpb_row.full-width-content .wpb_row > .row-bg-wrap,
 	}
 }
 
+
+.ul-custom li {
+	display: inline-flex;
+}
+
+#descriptions .inner {
+	width: 70em;
+}
+
+.ul-custom .label{
+	padding: 0 20px;
+}
+
+.ul-custom .label h3{
+	margin: 0;
+	color: #0de2b8;
+}

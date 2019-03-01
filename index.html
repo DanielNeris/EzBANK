@@ -119,46 +119,91 @@
 
 	<!-- Descriptions -->
 	<section id="descriptions" class="wrapper">
-		<div class="inner alt">
+		<div class="">
 			<section class="special">
-				<div class="row">
-					<div class="col-12">
+				<div class="container">
+					<!-- <div class="col-12">
 						<ul class="icons labeled ul-custom">
 							<li>
 								<span class="icon ">
 									<i class="fas fa-credit-card"></i>
-									<span class="label">
-										Você não precisa informar os dados do seu cartão nos sites parceiros do EzBANK.
-									</span>
+								</span>
+								<span class="label">
+									<h3>Ela é sua</h3>
+									Você não precisa informar os dados do seu cartão nos sites parceiros do EzBANK.
 								</span>
 							</li>
 							<li>
 								<span class="icon">
-									<i class="far fa-credit-card"></i>
-									<span class="label">
-										Você não precisa usar as maquinas de cartão nos estabelecimentos parceiros do
-										EzBANK.
-									</span>
+									<i class="fas fa-chart-line"></i>
+								</span>
+								<span class="label">
+									<h3>Mais Vendas</h3>
+									Você não precisa usar as maquinas de cartão nos estabelecimentos parceiros do
+									EzBANK.
 								</span>
 							</li>
 							<li>
 								<span class="icon">
-									<i class="fab fa-cc-mastercard"></i>
-									<span class="label">
-										As transações são criptografadas e o EzBANK não grava os dados do seu cartão.
-									</span>
+									<i class="fas fa-piggy-bank"></i>
+								</span>
+								<span class="label">
+									<h3>Dinheiro rápido</h3>
+									As transações são criptografadas e o EzBANK não grava os dados do seu cartão.
 								</span>
 							</li>
 							<li>
 								<span class="icon">
-									<i class="fab fa-cc-visa"></i>
-									<span class="label">
-										Faça transações financeiras usando QR Code na tela do celular, em sites ou em
-										etiquetas impressas.
-									</span>
+									<i class="fas fa-hand-holding-usd"></i>
+								</span>
+								<span class="label">
+									<h3>Taxas especiais</h3>
+									Faça transações financeiras usando QR Code na tela do celular, em sites ou em
+									etiquetas impressas.
 								</span>
 							</li>
 						</ul>
+					</div> -->
+
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-3 ul-custom">
+							<span class="icon">
+								<i class="fas fa-credit-card"></i>
+							</span>
+							<span class="label">
+								<h3>Ela é sua</h3>
+								Você não precisa informar os dados do seu cartão nos sites parceiros do EzBANK.
+							</span>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 ul-custom">
+							<span class="icon">
+								<i class="fas fa-chart-line"></i>
+							</span>
+							<span class="label">
+								<h3>Mais Vendas</h3>
+								Você não precisa usar as maquinas de cartão nos estabelecimentos parceiros do
+								EzBANK.
+							</span>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 ul-custom">
+							<span class="icon">
+								<i class="fas fa-piggy-bank"></i>
+							</span>
+							<span class="label">
+								<h3>Dinheiro rápido</h3>
+								As transações são criptografadas e o EzBANK não grava os dados do seu cartão.
+							</span>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 ul-custom">
+							<span class="icon">
+								<i class="fas fa-hand-holding-usd"></i>
+							</span>
+							<span class="label">
+								<h3>Taxas especiais</h3>
+								Faça transações financeiras usando QR Code na tela do celular, em sites ou em
+								etiquetas impressas.
+							</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -471,7 +516,9 @@
 					</label>
 				</div>
 				<div class="form-check form-check-inline">
-					<input class="form-check-input" type="radio" name="radioTypeCards" id="cred" value="1" data-toggle="collapse" href="#collapseCard" aria-expanded="false" aria-controls="collapseCard" onclick="setTypeCard()">
+					<input class="form-check-input" type="radio" name="radioTypeCards" id="cred" value="1"
+						data-toggle="collapse" href="#collapseCard" aria-expanded="false" aria-controls="collapseCard"
+						onclick="setTypeCard()">
 					<label class="form-check-label" for="cred">
 						Crédito
 					</label>
@@ -611,7 +658,7 @@
 								<span>Taxa <span id="taxa"></span>%</span> ao mês
 							</div>
 							<div class="col-6">
-								<h4><strong><span id="resultTaxa" class="ml-auto"></span></strong></h4>
+								<h4><strong><span style="font-size: 11px; margin-right: 5px;">R$ </span> <span id="resultTaxa" class="ml-auto"></span></strong></h4>
 							</div>
 						</div>
 					</div>
@@ -622,7 +669,7 @@
 								<span>Quanto você recebe</span>
 							</div>
 							<div class="col-6">
-								<h2><strong><span id="resultMoney" style="font-size: 32px;"></span></strong></h2>
+								<h2><strong><span style="font-size: 14px; margin-right: 5px;">R$  </span> <span id="resultMoney" style="font-size: 32px; letter-spacing: 0.05em;"></span></strong></h2>
 							</div>
 						</div>
 					</div>
@@ -649,8 +696,7 @@
 						</h4>
 					</div>
 
-					<div id="question1" class="collapse" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
+					<div id="question1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							Apenas de um smartphone Android ou Apple e instalar o app EzBANK.
 						</div>
@@ -665,8 +711,7 @@
 						</h4>
 					</div>
 
-					<div id="question2" class="collapse" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
+					<div id="question2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							Não. No entanto, se você deseja sacar em espécie é necessário vincular uma conta corrente no
 							EzBANK
@@ -683,8 +728,7 @@
 						</h4>
 					</div>
 
-					<div id="question3" class="collapse" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
+					<div id="question3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							Sim. Você precisa ter um cartão vinculado ao aplicativo EzBANK para efetuar pagamentos.
 						</div>
@@ -699,8 +743,7 @@
 						</h4>
 					</div>
 
-					<div id="question4" class="collapse" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
+					<div id="question4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							A vantagem é que você não precisará usar seu cartão em máquinas que possam clona-lo. O
 							número do
@@ -720,8 +763,7 @@
 						</h4>
 					</div>
 
-					<div id="question5" class="collapse" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
+					<div id="question5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							Não custa nada, porém, para o vendedor as operações de cartões cobrarão suas taxas de
 							transação
@@ -740,8 +782,7 @@
 						</h4>
 					</div>
 
-					<div id="question6" class="collapse" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
+					<div id="question6" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							O tempo é determinado pela operadora do cartão de crédito, a liberação ocorre normalmente
 							dentro
@@ -762,8 +803,7 @@
 						</h4>
 					</div>
 
-					<div id="question7" class="collapse" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
+					<div id="question7" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							Se você não quer esperar a liberação da operadora do cartão, poderá solicitar o adiantamento
 							da
@@ -802,6 +842,24 @@
 
 	<script>
 
+
+
+		function resize() {
+
+			if ($(window).width() <= 992) {
+
+				$('nav .navbar-brand img').remove();
+				$('nav .navbar-brand').append('<img src="images/LOGOEZ.png" width="150" height="50" class="d-inline-block align-top" alt="">');
+
+			}
+
+		}
+
+		$(document).ready(resize);
+		$(window).resize(resize);
+
+
+
 		$('.ul-navbar a').click(function () {
 			$('.navbar-collapse').collapse('hide');
 		});
@@ -818,7 +876,13 @@
 				$('nav').removeClass('bg-nav');
 				$('header .navbar .ul-navbar a').removeClass('navbar-color');
 				$('nav .navbar-brand img').remove();
-				$('nav .navbar-brand').append('<img src="images/LOGOEZ-WHITE.png" width="150" height="50" class="d-inline-block align-top" alt="">');
+				if ($(window).width() <= 992) {
+					$('nav .navbar-brand').append('<img src="images/LOGOEZ.png" width="150" height="50" class="d-inline-block align-top" alt="">');
+				}
+				else {
+					$('nav .navbar-brand').append('<img src="images/LOGOEZ-WHITE.png" width="150" height="50" class="d-inline-block align-top" alt="">');
+				}
+
 			}
 		})
 
@@ -836,28 +900,26 @@
 
 			for (var i = 0; i < options.length; i++) {
 				if (options[i].checked == true) {
-					
-					if(options[i].value == "1"){
-						console.log('cred');
 
-						$('input[name=radioOptionCards][value=1]').attr('checked', true); 
+					if (options[i].value == "1") {
+
+						$('input[name=radioOptionCards][value=1]').attr('checked', true);
 						optionCard = document.getElementsByName("radioOptionCards");
 						for (var j = 0; j < optionCard.length; j++) {
-							if (optionCard[j].checked == true){
-								console.log(optionCard[j].value);
+							if (optionCard[j].checked == true) {
+								// console.log(optionCard[j].value);
 								optionCard = optionCard[j].value;
 								break;
 							}
-							
+
 						}
 
 					}
-					else{
-						console.log('deb');
+					else {
 						optionCard = options[i].value;
 						break;
 					}
-					
+
 				}
 			}
 			var val = $('#money').val();
@@ -935,9 +997,9 @@
 			var resultTaxa = val * (taxa * m);
 			var resultMoney = val - resultTaxa;
 
-			var taxaDisplay = t.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
-			resultMoney = resultMoney.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
-			resultTaxa = resultTaxa.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+			var taxaDisplay = t.toLocaleString('pt-br', {minimumFractionDigits: 2});
+			resultMoney = resultMoney.toLocaleString('pt-br', {minimumFractionDigits: 2});
+			resultTaxa = resultTaxa.toLocaleString('pt-br', {minimumFractionDigits: 2});
 
 
 			$('#taxa').html(taxaDisplay);
